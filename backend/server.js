@@ -18,7 +18,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://vishal-panwar-task-project.vercel.app/",
+      "https://vishal-panwar-task-project.vercel.app",
     ],
     credentials: true,
   })
