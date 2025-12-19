@@ -4,7 +4,6 @@ import dotenv from "dotenv";
 
 import connectMongoDB from "./db/connectMongoDB.js";
 
-
 import projectRoutes from "./routes/project.routes.js";
 import clientRoutes from "./routes/client.routes.js";
 import contactRoutes from "./routes/contact.routes.js";
@@ -15,7 +14,15 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://vishalproject-indol.vercel.app/",
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json({ limit: "2mb" }));
 
 app.get("/", (_req, res) => {
