@@ -97,9 +97,21 @@ const Home = ({
               </p>
             </div>
             <div className="circle-stack">
-              <img src={roundimg1} alt="Agent 1" className="circle large" />
-              <img src={roundimg2} alt="Agent 2" className="circle medium" />
-              <img src={roundimg3} alt="Agent 3" className="circle small" />
+              <img
+                src="https://imgs.search.brave.com/29rxCmCuR__QGxfYqkT2RRYarnj3pa3w0xhSVz1dayA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9h/ZnJpY2FuLXdvbWFu/LW1hbmFnZXItbG9v/a2luZy1jYW1lcmEt/c21pbGluZy1ob2xk/aW5nLWNsaXBib2Fy/ZC13aGlsZS1kaXZl/cnNlLWNvd29ya2Vy/cy10YWxraW5nLWJh/Y2tncm91bmRfNDgy/MjU3LTUwMjEuanBn/P3NlbXQ9YWlzX2h5/YnJpZCZ3PTc0MA"
+                alt="Agent 1"
+                className="circle large"
+              />
+              <img
+                src="https://imgs.search.brave.com/Ys7htrYfuCPoSttenI-N_jW1mo4YwoLP6218OEFZrFQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI3/MTU2NDg3OS9waG90/by9zbWlsaW5nLWZl/bWFsZS1wYXRpZW50/LXJlY2VpdmVzLWdv/b2QtbmV3cy5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9LXJt/QkpBc1ZJaWpxYXox/REdDQWRSdkVfbnJX/TEpYcWV5ZXpqaXVI/YUdlRT0"
+                alt="Agent 2"
+                className="circle medium"
+              />
+              <img
+                src="https://imgs.search.brave.com/odIyXd4LtDijWPZYP3yegD8YjOwLKb7oVXt8M-8Od3w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9j/b3Jwb3JhdGUtZW1w/bG95ZWUtcG9zaW5n/LW9mZmljZV8yMy0y/MTQ4ODA0NDgzLmpw/Zz9zZW10PWFpc19o/eWJyaWQmdz03NDA"
+                alt="Agent 3"
+                className="circle small"
+              />
             </div>
           </div>
         </section>

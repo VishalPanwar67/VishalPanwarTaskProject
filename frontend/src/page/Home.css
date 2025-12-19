@@ -6,7 +6,8 @@
 
 .hero-bg {
   min-height: 520px;
-  background: url("../assets/topimg.jpeg") center/cover no-repeat;
+  background: url("https://imgs.search.brave.com/XnHPAXEgQmYaZl84yKiXG1V3AYBBQAeeYKHlL78OUv0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGlnaXRhbHNpbGsu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIyLzExL2RpZ2l0/YWwtbWFya2V0aW5n/LWNvbnN1bHRhbnRz/LXByb2Nlc3Mtcm9h/ZG1hcC5qcGc")
+    center/cover no-repeat;
   border-radius: 16px;
   overflow: hidden;
 }
@@ -526,7 +527,7 @@
   position: relative;
   width: 100%;
   min-height: 500px;
-  background-image: url("../assets/bottomimage.jpeg");
+  background-image: url("http://imgs.search.brave.com/xL3tbIKu3htloGy6mrVW4UzYRqXs4B5akgvPs1FBpyA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDYv/NjI1LzQyMS9zbWFs/bC9oZWxwLWNhcmUt/d2l0aC1pbnN1cmFu/Y2UtaG91c2UtY29u/Y2VwdC1idXNpbmVz/c21hbi1oYW5kLWhv/bGRpbmctbWluaS13/b29kZW4taG9tZS1v/ci1ob3VzZS1tb2Rl/bC1pbi10aGUtYmFj/a2dyb3VuZC1wbGFu/bmluZy1idXlzLXJl/YWwtZXN0YXRlLXBs/YW5uaW5nLXRvLWJ1/eS1wcm9wZXJ0eS1j/b25jZXB0LW9mLWNo/b29zaW5nLXRoZS1i/ZXN0LWZyZWUtcGhv/dG8uanBn");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
