@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Admin.css"; 
+import "./Admin.css";
+import Navbar from "../components/Navbar.jsx";
 
 const Admin = ({
   projects,
@@ -18,19 +19,15 @@ const Admin = ({
 }) => {
   return (
     <div className="page">
+      <Navbar />
       <header className="hero">
         <div className="hero-content" style={{ padding: "2rem" }}>
           <p className="eyebrow">Admin</p>
-          <h1>Manage site content</h1>
+          <h1>Administration Dashboard</h1>
           <p className="subhead">
-            Create projects and client stories. Review contact submissions and
-            newsletter signups.
+            Showcase your latest work and client feedback. Stay connected with
+            new leads and subscribers.
           </p>
-          <div className="cta-row">
-            <Link className="button ghost" to="/">
-              Back to landing
-            </Link>
-          </div>
         </div>
         <div
           className="hero-card"
@@ -61,7 +58,7 @@ const Admin = ({
           <div className="admin-grid">
             {/* Add Project Panel */}
             <div className="panel">
-              <h3>Add project</h3>
+              <h3>Add Project</h3>
               <form className="form" onSubmit={handleProjectSubmit}>
                 <label>
                   Name
@@ -124,7 +121,7 @@ const Admin = ({
 
             {/* Add Client Panel */}
             <div className="panel">
-              <h3>Add client</h3>
+              <h3>Add Client</h3>
               <form className="form" onSubmit={handleClientSubmit}>
                 <label>
                   Name
@@ -188,7 +185,7 @@ const Admin = ({
 
             {/* Submissions Lists */}
             <div className="panel list">
-              <h3>Contact submissions</h3>
+              <h3>Contact Submissions</h3>
               <ul>
                 {contacts.map((c) => (
                   <li key={c._id}>
@@ -205,7 +202,7 @@ const Admin = ({
             </div>
 
             <div className="panel list">
-              <h3>Newsletter subscribers</h3>
+              <h3>Newsletter Subscribers</h3>
               <ul>
                 {subscriptions.map((s) => (
                   <li key={s._id}>{s.email}</li>

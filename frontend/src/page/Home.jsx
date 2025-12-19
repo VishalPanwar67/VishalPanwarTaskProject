@@ -7,11 +7,8 @@ import img2 from "../assets/img2.jpg";
 import roundimg1 from "../assets/roundima1.webp";
 import roundimg2 from "../assets/roundimage2.png";
 import roundimg3 from "../assets/roundimage3.jpg";
-
 import "./Home.css";
 
-// Note: I am receiving all the data and handlers as props from App.jsx
-// to ensure your existing logic remains unbroken.
 const Home = ({
   projects,
   clients,
@@ -27,8 +24,6 @@ const Home = ({
   return (
     <div className="page">
       <Navbar />
-
-      {/* --- HERO SECTION --- */}
       <header className="hero hero-bg" id="home">
         <div className="hero-overlay">
           <div className="hero-left">
@@ -53,7 +48,7 @@ const Home = ({
                 onChange={(e) =>
                   setContactForm({ ...contactForm, email: e.target.value })
                 }
-                placeholder="Enter Email Address"
+                placeholder="email: xyz@gmial.com"
               />
               <input
                 required
@@ -61,7 +56,7 @@ const Home = ({
                 onChange={(e) =>
                   setContactForm({ ...contactForm, phone: e.target.value })
                 }
-                placeholder="Mobile Number"
+                placeholder="Mobile no."
               />
               <input
                 required
@@ -69,7 +64,7 @@ const Home = ({
                 onChange={(e) =>
                   setContactForm({ ...contactForm, city: e.target.value })
                 }
-                placeholder="Area, City"
+                placeholder="Address"
               />
               <button
                 className="button primary full"
@@ -85,15 +80,15 @@ const Home = ({
       </header>
 
       <main>
-        {/* --- SERVICES SECTION --- */}
         <section className="section light" id="services">
           <div className="split">
             <div className="text-block">
               <p className="eyebrow blue">Not Your Average Realtor</p>
               <p className="muted">
-                Real Trust brings a fresh and proactive, customer-centric
-                marketing design and effective marketing to get the most out of
-                your dollar and time value.
+                Real Trust delivers a modern, client-first approach to
+                marketing. Our proactive strategies are designed to maximize
+                your investment and respect your time, ensuring the best
+                possible results.
               </p>
             </div>
             <div className="circle-stack">
@@ -139,8 +134,9 @@ const Home = ({
               </div>
               <h3>Potential ROI</h3>
               <p className="muted">
-                Whether you are looking to buy a new property or renovate your
-                current home, we can help you maximize potential returns.
+                Maximize your investment value. Whether buying new or
+                renovating, our expert strategies help you secure the highest
+                possible returns.
               </p>
             </div>
             <div className="pill">
@@ -161,8 +157,9 @@ const Home = ({
               </div>
               <h3>Design</h3>
               <p className="muted">
-                Our in-house interior design ensures the project is guided
-                through planning and execution to reflect your home aspirations.
+                Realize your vision. Our in-house design team guides every step,
+                ensuring your project perfectly reflects your personal style and
+                goals.
               </p>
             </div>
             <div className="pill">
@@ -184,8 +181,8 @@ const Home = ({
               </div>
               <h3>Marketing</h3>
               <p className="muted">
-                Engaging marketing to give a sophisticated edge in a modern
-                market.
+                Stand out from the crowd. We deliver sophisticated, high-impact
+                marketing campaigns designed to give you a competitive edge.
               </p>
             </div>
           </div>
@@ -204,8 +201,9 @@ const Home = ({
         <section className="section about" id="about">
           <h2 className="centered heading">About Us</h2>
           <p className="muted centered wide">
-            Flipr personal specializes in real estate, excellent customer
-            service and a commitment to work hard, listen and follow through.
+            We specialize in real estate, delivering excellent customer service
+            with a firm commitment to work hard, listen to your needs, and
+            follow through on every detail.
           </p>
           <a href="/admin" className="button">
             Learn more
@@ -218,8 +216,8 @@ const Home = ({
             <div className="projects-header">
               <h2 className="projects-main-title">Our Projects</h2>
               <p className="projects-description">
-                We know what buyers are looking for and suggest projects that
-                will bring clients top dollar.
+                We leverage our knowledge of buyer preferences to suggest
+                high-impact projects that ensure you get top market value.
               </p>
             </div>
             <div className="projects-grid">
