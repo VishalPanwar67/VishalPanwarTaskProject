@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Admin.css";
 import Navbar from "../components/Navbar.jsx";
+import ImageUpload from "../components/ImageUpload";
 
 const Admin = ({
   projects,
@@ -56,7 +57,6 @@ const Admin = ({
       <main>
         <section className="section">
           <div className="admin-grid">
-            {/* Add Project Panel */}
             <div className="panel">
               <h3>Add Project</h3>
               <form className="form" onSubmit={handleProjectSubmit}>
@@ -99,15 +99,38 @@ const Admin = ({
                   />
                 </label>
                 <label>
-                  Image URL
-                  <input
-                    required
-                    value={projectForm.image}
-                    onChange={(e) =>
-                      setProjectForm({ ...projectForm, image: e.target.value })
-                    }
-                    placeholder="https://..."
-                  />
+                  Project Image (Ratio 450x350)
+                  {projectForm.image ? (
+                    <div style={{ marginTop: "0.5rem" }}>
+                      <img
+                        src={projectForm.image}
+                        alt="Preview"
+                        style={{
+                          width: "100%",
+                          maxWidth: "200px",
+                          borderRadius: "8px",
+                          display: "block",
+                          marginBottom: "0.5rem",
+                        }}
+                      />
+                      <button
+                        type="button"
+                        className="button ghost small"
+                        onClick={() =>
+                          setProjectForm({ ...projectForm, image: "" })
+                        }
+                      >
+                        Change Image
+                      </button>
+                    </div>
+                  ) : (
+                    <ImageUpload
+                      aspectRatio={450 / 350}
+                      onImageCropped={(base64) =>
+                        setProjectForm({ ...projectForm, image: base64 })
+                      }
+                    />
+                  )}
                 </label>
                 <button
                   className="button primary"
@@ -118,8 +141,6 @@ const Admin = ({
                 </button>
               </form>
             </div>
-
-            {/* Add Client Panel */}
             <div className="panel">
               <h3>Add Client</h3>
               <form className="form" onSubmit={handleClientSubmit}>
@@ -163,16 +184,40 @@ const Admin = ({
                   />
                 </label>
                 <label>
-                  Image URL
-                  <input
-                    required
-                    value={clientForm.image}
-                    onChange={(e) =>
-                      setClientForm({ ...clientForm, image: e.target.value })
-                    }
-                    placeholder="https://..."
-                  />
+                  Client Image
+                  {clientForm.image ? (
+                    <div style={{ marginTop: "0.5rem" }}>
+                      <img
+                        src={clientForm.image}
+                        alt="Preview"
+                        style={{
+                          width: "100%",
+                          maxWidth: "150px",
+                          borderRadius: "8px",
+                          display: "block",
+                          marginBottom: "0.5rem",
+                        }}
+                      />
+                      <button
+                        type="button"
+                        className="button ghost small"
+                        onClick={() =>
+                          setClientForm({ ...clientForm, image: "" })
+                        }
+                      >
+                        Change Image
+                      </button>
+                    </div>
+                  ) : (
+                    <ImageUpload
+                      aspectRatio={450 / 350}
+                      onImageCropped={(base64) =>
+                        setClientForm({ ...clientForm, image: base64 })
+                      }
+                    />
+                  )}
                 </label>
+
                 <button
                   className="button primary"
                   type="submit"
@@ -182,8 +227,6 @@ const Admin = ({
                 </button>
               </form>
             </div>
-
-            {/* Submissions Lists */}
             <div className="panel list">
               <h3>Contact Submissions</h3>
               <ul>
@@ -200,7 +243,6 @@ const Admin = ({
                 {!contacts.length && <p className="muted">No contacts yet.</p>}
               </ul>
             </div>
-
             <div className="panel list">
               <h3>Newsletter Subscribers</h3>
               <ul>
