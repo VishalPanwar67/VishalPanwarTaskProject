@@ -4,6 +4,9 @@ import Footer from "../components/Footer";
 import img3 from "../assets/About.png";
 import img1 from "../assets/img3.jpg";
 import img2 from "../assets/img2.jpg";
+import roundimg1 from "../assets/roundima1.webp";
+import roundimg2 from "../assets/roundimage2.png";
+import roundimg3 from "../assets/roundimage3.jpg";
 
 import "./Home.css";
 
@@ -94,21 +97,9 @@ const Home = ({
               </p>
             </div>
             <div className="circle-stack">
-              <img
-                src="/rounded image 1.webp"
-                alt="Agent 1"
-                className="circle large"
-              />
-              <img
-                src="/rounded image 2.png"
-                alt="Agent 2"
-                className="circle medium"
-              />
-              <img
-                src="/rounded image 3.jpg"
-                alt="Agent 3"
-                className="circle small"
-              />
+              <img src={roundimg1} alt="Agent 1" className="circle large" />
+              <img src={roundimg2} alt="Agent 2" className="circle medium" />
+              <img src={roundimg3} alt="Agent 3" className="circle small" />
             </div>
           </div>
         </section>

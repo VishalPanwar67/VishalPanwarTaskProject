@@ -6,7 +6,7 @@
 
 .hero-bg {
   min-height: 520px;
-  background: url("/main landing image.jpeg") center/cover no-repeat;
+  background: url("../assets/topimg.jpeg") center/cover no-repeat;
   border-radius: 16px;
   overflow: hidden;
 }
@@ -223,7 +223,6 @@
 .about .button {
   padding: 10px 50px;
   border-bottom: 2px solid #3b82f6;
-
 }
 
 /* --- Projects Section --- */
@@ -527,7 +526,7 @@
   position: relative;
   width: 100%;
   min-height: 500px;
-  background-image: url("/bottom image.jpeg");
+  background-image: url("../assets/bottomimage.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
